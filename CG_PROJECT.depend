@@ -1,0 +1,211 @@
+# depslib dependency file v1.0
+1583569925 source:c:\users\happyboy003\desktop\cg_project\arena.cpp
+	"arena.h"
+	<windows.h>
+	<GL/glut.h>
+
+1583438746 c:\users\happyboy003\desktop\cg_project\arena.h
+
+976692172 c:\program files\opengl lib\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1583565537 source:c:\users\happyboy003\desktop\cg_project\globals.cpp
+	"globals.h"
+
+1583565534 c:\users\happyboy003\desktop\cg_project\globals.h
+
+1583571212 source:c:\users\happyboy003\desktop\cg_project\image.cpp
+	"image.h"
+	"stb_image.h"
+
+1583438750 c:\users\happyboy003\desktop\cg_project\image.h
+	<windows.h>
+	<GL/glut.h>
+
+1583438754 c:\users\happyboy003\desktop\cg_project\stb_image.h
+	"stb_image.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<assert.h>
+	<stdint.h>
+	<emmintrin.h>
+	<intrin.h>
+	<arm_neon.h>
+
+1583575456 source:c:\users\happyboy003\desktop\cg_project\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<time.h>
+	"globals.h"
+	"image.h"
+	"screens.h"
+
+1583579232 c:\users\happyboy003\desktop\cg_project\keyboard.h
+	"screens.h"
+	<stdio.h>
+	"mouse.h"
+
+1583575450 c:\users\happyboy003\desktop\cg_project\screens.h
+
+1583581778 source:c:\users\happyboy003\desktop\cg_project\screens.cpp
+	"screens.h"
+	<windows.h>
+	<GL/glut.h>
+	"image.h"
+	"stdio.h"
+	<time.h>
+	"arena.h"
+	"player.h"
+	"keyboard.h"
+	"mouse.h"
+	"collisiondetection.h"
+	"cpuai.h"
+	"utilities.h"
+
+1583553243 source:c:\users\happyboy003\desktop\cg_project\mouse.cpp
+
+1583569459 c:\users\happyboy003\desktop\cg_project\mouse.h
+	"screens.h"
+	<stdio.h>
+
+1583582122 c:\users\happyboy003\desktop\cg_project\player.h
+
+1583572647 c:\users\happyboy003\desktop\cg_project\collisiondetection.h
+	<windows.h>
+	<GL/glut.h>
+	"player.h"
+	<stdio.h>
+
+1583438750 c:\users\happyboy003\desktop\cg_project\cpuai.h
+	"player.h"
+
+1583582200 source:c:\users\happyboy003\desktop\cg_project\cpuai.cpp
+	"cpuai.h"
+	<math.h>
+	<stdio.h>
+
+1583582093 source:c:\users\happyboy003\desktop\cg_project\player.cpp
+	"player.h"
+	<windows.h>
+	<GL/glut.h>
+	"arena.h"
+	<stdio.h>
+	<math.h>
+
+1583575613 source:c:\users\happyboy003\desktop\cg_project\utilities.cpp
+	"utilities.h"
+	<windows.h>
+	<GL/glut.h>
+	<stdio.h>
+
+1583573780 c:\users\happyboy003\desktop\cg_project\utilities.h
+
+1583569925 source:c:\users\happyboy003\desktop\our_project\arena.cpp
+	"arena.h"
+	<windows.h>
+	<GL/glut.h>
+
+1583438746 c:\users\happyboy003\desktop\our_project\arena.h
+
+1583601294 source:c:\users\happyboy003\desktop\our_project\cpuai.cpp
+	"cpuai.h"
+	<math.h>
+	<stdio.h>
+
+1583438750 c:\users\happyboy003\desktop\our_project\cpuai.h
+	"player.h"
+
+1583600992 c:\users\happyboy003\desktop\our_project\player.h
+
+1583571212 source:c:\users\happyboy003\desktop\our_project\image.cpp
+	"image.h"
+	"stb_image.h"
+
+1583438750 c:\users\happyboy003\desktop\our_project\image.h
+	<windows.h>
+	<GL/glut.h>
+
+1583438754 c:\users\happyboy003\desktop\our_project\stb_image.h
+	"stb_image.h"
+	<stdio.h>
+	<stdlib.h>
+	<stdarg.h>
+	<stddef.h>
+	<stdlib.h>
+	<string.h>
+	<limits.h>
+	<math.h>
+	<stdio.h>
+	<assert.h>
+	<stdint.h>
+	<emmintrin.h>
+	<intrin.h>
+	<arm_neon.h>
+
+1583598477 source:c:\users\happyboy003\desktop\our_project\main.cpp
+	<windows.h>
+	<GL/glut.h>
+	<time.h>
+	"globals.h"
+	"image.h"
+	"screens.h"
+
+1583565534 c:\users\happyboy003\desktop\our_project\globals.h
+
+1583575450 c:\users\happyboy003\desktop\our_project\screens.h
+
+1583601241 source:c:\users\happyboy003\desktop\our_project\player.cpp
+	"player.h"
+	<windows.h>
+	<GL/glut.h>
+	"arena.h"
+	<stdio.h>
+	<math.h>
+
+1583601369 source:c:\users\happyboy003\desktop\our_project\screens.cpp
+	"screens.h"
+	<windows.h>
+	<GL/glut.h>
+	"image.h"
+	"stdio.h"
+	"arena.h"
+	"player.h"
+	"keyboard.h"
+	"mouse.h"
+	"collisiondetection.h"
+	"cpuai.h"
+	"utilities.h"
+	<time.h>
+
+1583646736 c:\users\happyboy003\desktop\our_project\keyboard.h
+	"screens.h"
+	<stdio.h>
+	"mouse.h"
+
+1583569459 c:\users\happyboy003\desktop\our_project\mouse.h
+	"screens.h"
+	<stdio.h>
+
+1583600793 c:\users\happyboy003\desktop\our_project\collisiondetection.h
+	<windows.h>
+	<GL/glut.h>
+	"player.h"
+	<stdio.h>
+
+1583583367 c:\users\happyboy003\desktop\our_project\utilities.h
+
+1583584068 source:c:\users\happyboy003\desktop\our_project\utilities.cpp
+	"utilities.h"
+	<windows.h>
+	<GL/glut.h>
+	<stdio.h>
+
