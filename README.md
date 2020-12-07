@@ -1,2 +1,2 @@
 # StrikeFall
-Created by: Prajwol Pakka, Anish Dahal and Sujal Subedi as part of Bachelor's Level College Project (3rd year:1st part) for Computer Graphics Subject
+Created as Computer Graphics project for Bachelor's Level (3rd year:1st part) 
