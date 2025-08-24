@@ -1,6 +1,5 @@
 #ifndef COLLISIONDETECTION_H
 #define COLLISIONDETECTION_H
-#include <windows.h>
 #include <GL/glut.h>
 #include "player.h"
 #include <stdio.h>

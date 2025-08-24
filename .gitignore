@@ -1,0 +1,55 @@
+# General
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.cache/
+
+# Build outputs
+bin/
+build/
+cmake-build-*/
+
+# C/C++ artifacts
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exp
+*.pdb
+*.ilk
+*.pch
+*.d
+*.gcno
+*.gcda
+*.gch
+*.out
+*.exe
+
+# Debugging
+core
+core.*
+*.dSYM/
+
+# IDEs/editors
+.vscode/
+.idea/
+*.user
+*.code-workspace
+
+# Code::Blocks project transient files
+CG_PROJECT.depend
+CG_PROJECT.layout
+
+# Misc tools
+compile_commands.json
+

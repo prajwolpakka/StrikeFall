@@ -3,6 +3,7 @@
 #include "screens.h"
 #include <stdio.h>
 #include "mouse.h"
+#include "audio.h"
 
 bool p1Up = false, p1Down = false, p1Left = false, p1Right = false;
 bool p2Up = false, p2Down = false, p2Left = false, p2Right = false;
@@ -36,7 +37,7 @@ void player1KeyPressed(unsigned char key, int xpos, int ypos) {
     case 32:
         printf("Space pressed \n");
         mouseEnabled = true;
-        PlaySound(TEXT("mouseClick.wav"),NULL,SND_FILENAME|SND_ASYNC);
+        playSound("assets/mouseClick.wav");
         glutDisplayFunc(menuScreen);
         glutPostRedisplay();
         break;

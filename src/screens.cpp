@@ -1,5 +1,4 @@
 #include "screens.h"
-#include <windows.h>
 #include <GL/glut.h>
 #include "image.h"
 #include "stdio.h"
@@ -13,6 +12,7 @@
 #include "cpuai.h"
 #include "utilities.h"
 #include <time.h>
+#include "audio.h"
 
 bool player2Mode,audio,gameOver,respawner = false;
 float arenaRotation=0,starterCubePos = -0.5,starterCubeOpacity = 1;
@@ -57,9 +57,7 @@ void timer(int) {
     second--;
     if(second == 12) {
 //        printf("Here is the countdown \n");
-        if(audio) {
-            PlaySound(TEXT("countDown.wav"),NULL,SND_FILENAME | SND_ASYNC);
-        }
+        if(audio) { playSound("assets/countDown.wav"); }
     }
 }
 void welcomeScreen() {
@@ -69,8 +67,8 @@ void welcomeScreen() {
     glPushMatrix();
     glLoadIdentity();
     glTranslated(0,-4,-35);
-    PlaySound(TEXT("welcomeScreenMusic.wav"),NULL,SND_FILENAME | SND_ASYNC );
-    image("welcomeScreen.jpg");
+    playSound("assets/welcomeScreenMusic.wav");
+    image("assets/welcomeScreen.jpg");
     callBackHandlers = true;
     glPopMatrix();
     glutSwapBuffers();
@@ -83,7 +81,7 @@ void menuScreen() {
     glPushMatrix();
     glLoadIdentity();
     glTranslated(0,-4,-35);
-    image("menuScreen.jpg");
+    image("assets/menuScreen.jpg");
     glPopMatrix();
     glutSwapBuffers();
     glEnable(GL_LIGHTING);
@@ -101,9 +99,7 @@ void chooseFirstPlayerMode(bool musicSetting) {
     starterCubePos = -0.5;
     starterCubeOpacity = 1;
     initialTime = time(NULL);
-    if(audio) {
-        PlaySound(TEXT("player1GamePlay.wav"),NULL,SND_FILENAME|SND_ASYNC);
-    }
+    if(audio) { playSound("assets/player1GamePlay.wav"); }
     if(callBackHandlers) {
         callBackHandlers = false;
         glutTimerFunc(1000/FPS,renderer,0);
@@ -123,9 +119,7 @@ void chooseSecondPlayerMode(bool musicSetting) {
     starterCubePos = -0.5;
     starterCubeOpacity = 1;
     initialTime = time(NULL);
-    if(audio) {
-        PlaySound(TEXT("player2GamePlay.wav"),NULL,SND_FILENAME|SND_ASYNC);
-    }
+    if(audio) { playSound("assets/player2GamePlay.wav"); }
     if(callBackHandlers) {
         callBackHandlers = false;
         glutTimerFunc(1000/FPS,renderer,0);
@@ -141,7 +135,7 @@ void viewOptions()  {
     glPushMatrix();
     glLoadIdentity();
     glTranslated(0,-4,-35);
-    image("viewOptions.jpg");
+    image("assets/viewOptions.jpg");
     glPopMatrix();
     glutSwapBuffers();
     glEnable(GL_LIGHTING);
@@ -153,7 +147,7 @@ void viewCredits() {
     glPushMatrix();
     glLoadIdentity();
     glTranslated(0,-3.5,-35);
-    image("viewCredits.jpg");
+    image("assets/viewCredits.jpg");
     glPopMatrix();
     glutSwapBuffers();
     glEnable(GL_LIGHTING);
@@ -165,7 +159,7 @@ void viewInstructions(void) {
     glPushMatrix();
     glLoadIdentity();
     glTranslated(0,-4,-35);
-    image("viewInstructions.jpg");
+    image("assets/viewInstructions.jpg");
     glPopMatrix();
     glutSwapBuffers();
     glEnable(GL_LIGHTING);
@@ -359,11 +353,8 @@ void renderer(int) {
         }
     }
     if(gameOver && replay) {
-        if(player2Mode && audio)  {
-            PlaySound(TEXT("player2GamePlay.wav"),NULL,SND_FILENAME|SND_ASYNC);
-        } else if(!player2Mode && audio) {
-            PlaySound(TEXT("player1GamePlay.wav"),NULL,SND_FILENAME|SND_ASYNC);
-        }
+        if(player2Mode && audio)  { playSound("assets/player2GamePlay.wav"); }
+        else if(!player2Mode && audio) { playSound("assets/player1GamePlay.wav"); }
         gameOver = false;
         replay = false;
         second = 61;

@@ -1,5 +1,4 @@
 #include "player.h"
-#include <windows.h>
 #include <GL/glut.h>
 #include "arena.h"
 #include <stdio.h>

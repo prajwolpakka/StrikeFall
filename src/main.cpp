@@ -1,5 +1,5 @@
-#include <windows.h>
 #include <GL/glut.h>
+#include <GL/glu.h>
 #include <time.h>
 #include "globals.h"
 #include "image.h"

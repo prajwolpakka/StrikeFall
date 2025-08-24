@@ -1,5 +1,4 @@
 #include "utilities.h"
-#include <windows.h>
 #include <GL/glut.h>
 #include <stdio.h>
 

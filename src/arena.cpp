@@ -1,5 +1,4 @@
 #include "arena.h"
-#include <windows.h>
 #include <GL/glut.h>
 
 int minX = -9,maxX = 9,minZ = -9,maxZ = 9;
